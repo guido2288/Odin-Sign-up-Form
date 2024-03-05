@@ -1,0 +1,130 @@
+@font-face {
+  font-family: odin-lined;
+  src: url(./Norse-Bold.otf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+.main-container{
+  display: flex;
+}
+aside{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/johny-goerend-U_diPCXCBxU-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  height: 200px;
+  width: 100%;
+}
+.logo-container img{
+  width: 110px;
+}
+.logo-container h1{
+  font-family: odin-lined;
+  color: #f9fafb;
+  font-size: 6rem;
+}
+section{
+  display: flex;
+  flex-direction: column;
+}
+.text-container{
+  padding: 80px 180px 0 40px;
+}
+.text-container p{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  
+}
+.form-section{
+  margin-top: 12px;
+  background-color: #fff;
+  padding: 20px 120px 20px 40px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 12px -8px rgba(0,0,0,0.75);
+}
+.form-section p{
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+form div{
+  display: flex;
+  flex-direction: column;
+}
+form div label{
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+form div input{
+  border: solid 1px #E5E7EB;
+  border-radius: 5px;
+  height: 25px;
+  padding-left: 10px;
+  margin-bottom: 12px;
+  width: 80%;
+  outline: none;
+}
+form div input:focus{
+  border: solid 1.5px rgb(83, 117, 214);
+  box-shadow: 4px 4px 12px -8px rgba(83, 117, 214,0.75);
+}
+.error{
+  border: solid 1.5px rgb(193, 53, 53);
+  box-shadow: 4px 4px 12px -8px rgba(193, 53, 53,0.75);
+} 
+
+.button-container{
+  padding-left: 40px;
+}
+
+.button-container button{
+  background-color: rgb(88, 165, 155);
+  box-shadow: 4px 4px 12px -8px rgba(88, 165, 155,0.75);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.button-container p{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.button-container a{
+  text-decoration: none;
+  color: rgb(88, 165, 155);
+}
+.button-container a:hover{
+  text-decoration: underline;
+}
